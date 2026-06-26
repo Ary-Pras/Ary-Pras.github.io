@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ary Prasetyo Cahyono | Portfolio</title>
-    <!-- Menggunakan Tailwind CSS untuk tampilan modern instant -->
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Menggunakan Font Awesome untuk Ikon -->
+    
+    <!-- Font Awesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library (CSS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -22,10 +28,10 @@
         }
     </script>
 </head>
-<body class="bg-darkBg text-gray-300 font-sans antialiased selection:bg-accent selection:text-darkBg">
+<body class="bg-darkBg text-gray-300 font-sans antialiased selection:bg-accent selection:text-darkBg overflow-x-hidden">
 
     <!-- Navbar -->
-    <nav class="fixed w-full bg-darkBg/90 backdrop-blur-sm z-50 border-b border-gray-800">
+    <nav class="fixed w-full bg-darkBg/90 backdrop-blur-sm z-50 border-b border-gray-800" data-aos="fade-down" data-aos-duration="800">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-white tracking-wider">ARY<span class="text-accent">.</span></a>
             <div class="space-x-6 text-sm font-medium">
@@ -36,19 +42,21 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col justify-center min-h-[80vh]">
-        <p class="text-accent font-mono mb-4">Hi, my name is</p>
-        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Ary Prasetyo Cahyono.</h1>
-        <h2 class="text-3xl md:text-5xl font-bold text-gray-500 mb-6">I build intelligent hardware systems.</h2>
-        <p class="max-w-2xl text-lg mb-10 leading-relaxed">
+    <!-- Hero / About Section -->
+    <section id="about" class="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col justify-center min-h-[80vh]">
+        <p class="text-accent font-mono mb-4" data-aos="fade-up" data-aos-delay="100">Hi, my name is</p>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="200">Ary Prasetyo Cahyono.</h1>
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-500 mb-6" data-aos="fade-up" data-aos-delay="300">I build intelligent hardware systems.</h2>
+        <p class="max-w-2xl text-lg mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="400">
             I am an Instrumentation Physics student highly interested in the Internet of Things (IoT), artificial intelligence (AI), and hardware integration. Experienced in microcontroller programming, system automation, and developing smart physical systems.
         </p>
-        <div class="flex space-x-4">
-            <a href="mailto:arxpraset@gmail.com" class="px-6 py-3 border border-accent text-accent rounded hover:bg-accent/10 transition font-mono">
+        <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="500">
+            <!-- Link Email diubah agar langsung membuka Web Gmail Compose -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arxpraset@gmail.com" target="_blank" class="px-6 py-3 border border-accent text-accent rounded hover:bg-accent/10 transition font-mono">
                 <i class="fa-solid fa-envelope mr-2"></i> Get In Touch
             </a>
-            <a href="https://github.com/arx666" target="_blank" class="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-700 transition">
+            <!-- Link GitHub diubah sesuai request -->
+            <a href="https://github.com/Ary-Pras" target="_blank" class="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-700 transition">
                 <i class="fa-brands fa-github mr-2"></i> GitHub
             </a>
             <a href="https://linkedin.com/in/ary-prasetyo-cahyono-39a376297/" target="_blank" class="px-6 py-3 bg-[#0a66c2] text-white rounded hover:bg-[#004182] transition">
@@ -59,20 +67,20 @@
 
     <!-- Experience Section -->
     <section id="experience" class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 flex items-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
             <span class="text-accent font-mono text-xl mr-3">01.</span> Professional Experience
             <div class="h-px bg-gray-700 flex-grow ml-6"></div>
         </h2>
 
         <div class="grid gap-8">
             <!-- Job 1 -->
-            <div class="bg-cardBg p-8 rounded-lg border border-gray-800 hover:border-accent/50 transition">
-                <div class="flex justify-between items-start mb-4">
+            <div class="bg-cardBg p-8 rounded-lg border border-gray-800 hover:border-accent/50 transition" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4 flex-col md:flex-row">
                     <div>
                         <h3 class="text-xl font-bold text-white">Project Management & IoT Intern</h3>
                         <p class="text-accent">Lembaga Minyak dan Gas Bumi (LEMIGAS)</p>
                     </div>
-                    <span class="text-sm font-mono text-gray-500">Apr 2024 - Aug 2024</span>
+                    <span class="text-sm font-mono text-gray-500 mt-2 md:mt-0">Apr 2024 - Aug 2024</span>
                 </div>
                 <ul class="list-disc list-inside space-y-2 text-gray-400">
                     <li>Designed and built an IoT-automated hydroponics system from scratch with a 13-person team.</li>
@@ -83,13 +91,13 @@
             </div>
 
             <!-- Job 2 -->
-            <div class="bg-cardBg p-8 rounded-lg border border-gray-800 hover:border-accent/50 transition">
-                <div class="flex justify-between items-start mb-4">
+            <div class="bg-cardBg p-8 rounded-lg border border-gray-800 hover:border-accent/50 transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex justify-between items-start mb-4 flex-col md:flex-row">
                     <div>
                         <h3 class="text-xl font-bold text-white">Electrical Division Member</h3>
                         <p class="text-accent">Smart Urban Farming (SUF)</p>
                     </div>
-                    <span class="text-sm font-mono text-gray-500">Jun 2024 - Sep 2024</span>
+                    <span class="text-sm font-mono text-gray-500 mt-2 md:mt-0">Jun 2024 - Sep 2024</span>
                 </div>
                 <ul class="list-disc list-inside space-y-2 text-gray-400">
                     <li>Assembled, wired, and troubleshooted plug-and-play IoT monitoring kits for urban agriculture.</li>
@@ -102,20 +110,20 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 flex items-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
             <span class="text-accent font-mono text-xl mr-3">02.</span> Featured Projects
             <div class="h-px bg-gray-700 flex-grow ml-6"></div>
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
             <!-- Project 1 -->
-            <div class="bg-cardBg p-6 rounded-lg group hover:-translate-y-2 transition duration-300">
+            <div class="bg-cardBg p-6 rounded-lg group hover:-translate-y-2 transition duration-300" data-aos="zoom-in-up">
                 <div class="flex justify-between items-center mb-4 text-accent text-2xl">
-                    <i class="fa-solid fa-robot"></i>
+                    <i class="fa-solid fa-robot group-hover:scale-110 transition-transform"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Voice-Controlled Robotic Hand with AI</h3>
+                <h3 class="text-xl font-bold text-white mb-3">Voice-Controlled Robotic Hand</h3>
                 <p class="text-sm text-gray-400 mb-4 h-24 overflow-hidden">
-                    Developed an advanced assistive robotic hand utilizing the OpenAI Whisper model for speech recognition. Integrated the AI with a Wemos D1 R1 to translate vocal commands into precise mechanical actuations.
+                    Developed an advanced assistive robotic hand utilizing the OpenAI Whisper model for speech recognition. Integrated the AI with a Wemos D1 R1 to translate vocal commands into actuations.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500 mt-auto">
                     <span class="bg-gray-800 px-2 py-1 rounded">OpenAI Whisper</span>
@@ -125,9 +133,9 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="bg-cardBg p-6 rounded-lg group hover:-translate-y-2 transition duration-300">
+            <div class="bg-cardBg p-6 rounded-lg group hover:-translate-y-2 transition duration-300" data-aos="zoom-in-up" data-aos-delay="150">
                 <div class="flex justify-between items-center mb-4 text-accent text-2xl">
-                    <i class="fa-solid fa-leaf"></i>
+                    <i class="fa-solid fa-leaf group-hover:scale-110 transition-transform"></i>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-3">Automated Hydroponics System</h3>
                 <p class="text-sm text-gray-400 mb-4 h-24 overflow-hidden">
@@ -141,9 +149,9 @@
             </div>
             
             <!-- Project 3 -->
-            <div class="bg-cardBg p-6 rounded-lg group hover:-translate-y-2 transition duration-300">
+            <div class="bg-cardBg p-6 rounded-lg group hover:-translate-y-2 transition duration-300" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="flex justify-between items-center mb-4 text-accent text-2xl">
-                    <i class="fa-solid fa-car"></i>
+                    <i class="fa-solid fa-car group-hover:scale-110 transition-transform"></i>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-3">IoT Parking Barrier System</h3>
                 <p class="text-sm text-gray-400 mb-4 h-24 overflow-hidden">
@@ -160,17 +168,17 @@
 
     <!-- Skills Section -->
     <section class="py-20 px-6 max-w-5xl mx-auto mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 flex items-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
             <span class="text-accent font-mono text-xl mr-3">03.</span> Core Competencies
             <div class="h-px bg-gray-700 flex-grow ml-6"></div>
         </h2>
         <div class="flex flex-wrap gap-3">
-            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default">Node-RED & GUI Development</span>
-            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default">Wemos D1 R1 & Arduino</span>
-            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default">C/C++ & Python</span>
-            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default">OpenAI Whisper Integration</span>
-            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default">PC Hardware & Optimization</span>
-            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default">Statistical Data Processing</span>
+            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default" data-aos="flip-up" data-aos-delay="100">Node-RED & GUI Development</span>
+            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default" data-aos="flip-up" data-aos-delay="200">Wemos D1 R1 & Arduino</span>
+            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default" data-aos="flip-up" data-aos-delay="300">C/C++ & Python</span>
+            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default" data-aos="flip-up" data-aos-delay="400">OpenAI Whisper Integration</span>
+            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default" data-aos="flip-up" data-aos-delay="500">PC Hardware & Optimization</span>
+            <span class="px-4 py-2 border border-gray-700 text-gray-300 rounded hover:border-accent hover:text-accent transition cursor-default" data-aos="flip-up" data-aos-delay="600">Statistical Data Processing</span>
         </div>
     </section>
 
@@ -179,5 +187,15 @@
         <p>Built by Ary Prasetyo Cahyono. Hosted on GitHub Pages.</p>
     </footer>
 
+    <!-- AOS Animation Library (JS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inisialisasi library animasi
+        AOS.init({
+            duration: 800, // Durasi animasi dalam milidetik
+            once: true,    // Animasi hanya berjalan satu kali saat di-scroll ke bawah
+            offset: 100,   // Jarak elemen dari bawah layar sebelum animasi dimulai
+        });
+    </script>
 </body>
 </html>
